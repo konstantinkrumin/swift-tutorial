@@ -16,18 +16,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mYy-WS-tv7">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10S" translatesAutoresizingMaskIntoConstraints="NO" id="mYy-WS-tv7">
                                 <rect key="frame" x="71.666666666666686" y="151" width="250" height="350"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="FDY-Pa-ZmT"/>
                                     <constraint firstAttribute="height" constant="350" id="tYR-ef-i9W"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPh-w5-UlL">
+                                <rect key="frame" x="61" y="560" width="260" height="50"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="EHc-T2-sIF"/>
+                                    <constraint firstAttribute="height" constant="50" id="wJ0-Gm-4cK"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Stop">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zy-6D-0C6">
+                                <rect key="frame" x="61" y="631" width="115.00000000000001" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VLi-M7-O7K"/>
+                                    <constraint firstAttribute="width" constant="115" id="VZn-Hl-ra7"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Restart">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MI4-y5-EPH">
+                                <rect key="frame" x="206" y="631" width="115" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ec9-0O-i2E"/>
+                                    <constraint firstAttribute="width" constant="115" id="TDA-kx-VMG"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Rules">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="OPh-w5-UlL" firstAttribute="top" secondItem="mYy-WS-tv7" secondAttribute="bottom" constant="60" id="5Vp-Cb-tUQ"/>
                             <constraint firstItem="mYy-WS-tv7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="7Ke-fw-aD2"/>
+                            <constraint firstItem="3zy-6D-0C6" firstAttribute="top" secondItem="OPh-w5-UlL" secondAttribute="bottom" constant="20" id="EKY-gG-0uE"/>
+                            <constraint firstItem="3zy-6D-0C6" firstAttribute="leading" secondItem="OPh-w5-UlL" secondAttribute="leading" id="hge-dM-8ur"/>
+                            <constraint firstItem="MI4-y5-EPH" firstAttribute="trailing" secondItem="OPh-w5-UlL" secondAttribute="trailing" id="i9M-I6-VnD"/>
+                            <constraint firstItem="MI4-y5-EPH" firstAttribute="centerY" secondItem="3zy-6D-0C6" secondAttribute="centerY" id="iFa-x5-i9O"/>
+                            <constraint firstItem="OPh-w5-UlL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p8B-uP-jGU"/>
                             <constraint firstItem="mYy-WS-tv7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qKY-Fo-MFg"/>
                         </constraints>
                     </view>
@@ -38,8 +83,21 @@
         </scene>
     </scenes>
     <resources>
+        <image name="10S" width="691" height="1056"/>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
